@@ -419,7 +419,7 @@ div#container {
 }
 
 .articleGrid__withBg--graphic {
-  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-image: url("./../images/desktop/image-graphic-design.jpg");
   background-size: cover;
   background-position: center;
 }

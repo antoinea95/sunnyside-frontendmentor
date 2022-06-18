@@ -102,19 +102,19 @@
         }
 
          &--graphic {
-            @include articleBg('../../images/desktop/image-graphic-design.jpg', $color-graphic);
+            @include articleBg('./../images/desktop/image-graphic-design.jpg', $color-graphic);
 
             @include mobile-screen {
-                @include articleBg('../../images/mobile/image-graphic-design.jpg', $color-graphic);
+                @include articleBg('./../images/mobile/image-graphic-design.jpg', $color-graphic);
             }
 
         }
 
         &--photo {
-            @include articleBg('../../images/desktop/image-photography.jpg', $color-photo);
+            @include articleBg('./../images/desktop/image-photography.jpg', $color-photo);
 
             @include mobile-screen {
-                @include articleBg('../../images/mobile/image-photography.jpg', $color-graphic);
+                @include articleBg('./../images/mobile/image-photography.jpg', $color-graphic);
             }
         }
     }

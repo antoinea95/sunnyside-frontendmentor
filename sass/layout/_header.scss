@@ -3,13 +3,13 @@
     position: relative;
     width: 100%;
     height: 90vh;
-    background-image: url('../../images/desktop/image-header.jpg');
+    background-image: url('./../images/desktop/image-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     @include mobile-screen {
-        background-image: url('../../images/mobile/image-header.jpg');
+        background-image: url('./../images/mobile/image-header.jpg');
     }
    
 
