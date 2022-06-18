@@ -115,7 +115,7 @@ div#container {
   position: relative;
   width: 100%;
   height: 90vh;
-  background-image: url("../../images/desktop/image-header.jpg");
+  background-image: url("./../images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ div#container {
 
 @media screen and (max-width: 768px) {
   .header {
-    background-image: url("../../images/mobile/image-header.jpg");
+    background-image: url("./../images/mobile/image-header.jpg");
   }
 }
 
@@ -440,7 +440,7 @@ div#container {
 
 @media screen and (max-width: 768px) {
   .articleGrid__withBg--graphic {
-    background-image: url("../../images/mobile/image-graphic-design.jpg");
+    background-image: url("./../images/mobile/image-graphic-design.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -459,7 +459,7 @@ div#container {
 }
 
 .articleGrid__withBg--photo {
-  background-image: url("../../images/desktop/image-photography.jpg");
+  background-image: url("./../images/desktop/image-photography.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -480,7 +480,7 @@ div#container {
 
 @media screen and (max-width: 768px) {
   .articleGrid__withBg--photo {
-    background-image: url("../../images/mobile/image-photography.jpg");
+    background-image: url("./../images/mobile/image-photography.jpg");
     background-size: cover;
     background-position: center;
   }
