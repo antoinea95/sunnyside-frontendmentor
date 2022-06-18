@@ -106,8 +106,9 @@ p {
 }
 
 div#container {
+  width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
   height: 100vh;
 }
 
@@ -225,6 +226,7 @@ div#container {
 
 @media screen and (max-width: 1024px) {
   .header__nav ul {
+    overflow: hidden;
     height: 80%;
     display: flex;
     justify-content: space-between;
@@ -443,12 +445,6 @@ div#container {
   color: #25564b;
 }
 
-@media screen and (max-width: 1024px) {
-  .articleGrid__withBg--graphic {
-    background-size: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .articleGrid__withBg--graphic {
     background-image: url("./../images/mobile/image-graphic-design.jpg");
@@ -460,12 +456,6 @@ div#container {
   }
   .articleGrid__withBg--graphic p {
     color: #25564b;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-width: 1024px) {
-  .articleGrid__withBg--graphic {
-    background-size: 100%;
   }
 }
 
@@ -483,12 +473,6 @@ div#container {
   color: #19536b;
 }
 
-@media screen and (max-width: 1024px) {
-  .articleGrid__withBg--photo {
-    background-size: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .articleGrid__withBg--photo {
     background-image: url("./../images/mobile/image-photography.jpg");
@@ -500,12 +484,6 @@ div#container {
   }
   .articleGrid__withBg--photo p {
     color: #25564b;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-width: 1024px) {
-  .articleGrid__withBg--photo {
-    background-size: 100%;
   }
 }
 

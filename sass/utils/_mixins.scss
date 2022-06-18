@@ -64,8 +64,4 @@
     p {
         color: $color;
     }
-
-    @include tablet-screen {
-        background-size: 100%;
-    }
 }

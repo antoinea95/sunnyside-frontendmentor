@@ -84,7 +84,6 @@
                     top: -10%; 
                     
                 }
-    
             }
         }
 
@@ -93,6 +92,7 @@
             @include flex(space-between, center, row);
 
             @include tablet-screen {
+                overflow: hidden;
                 height: 80%;
                 @include flex(space-between, center, column);
                 color: $color-txt2;
