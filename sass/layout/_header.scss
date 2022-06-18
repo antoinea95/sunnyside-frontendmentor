@@ -1,0 +1,141 @@
+.header {
+
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('../../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mobile-screen {
+        background-image: url('../../images/mobile/image-header.jpg');
+    }
+   
+
+    &__logo {
+        // positionnement du logo
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &__toggle {
+        display: none;
+
+        @include tablet-screen {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            margin: 2rem;
+        }
+    }
+
+    &__nav {
+        // positionnement du menu de naviagation
+        position: absolute;
+        width: 30%;
+        top: 0; 
+        right: 0;
+        margin: 2rem;
+
+        @include tablet-screen {
+            width: 0%;
+            height: 0%;
+            opacity: 0%;
+            z-index: -1;
+        }
+        
+
+        &--toggle {
+
+            @include tablet-screen {
+
+                // création du bloc du menu déroulant
+                opacity: 100%;
+                @include flex(center, center, column);
+                background-color: white;
+                top: 10%;
+                right: 1%;
+                width: 30%;
+                height: 35%;
+                z-index: 1;
+                transition: all 200ms ease-in-out;
+
+                // ajustement pour la partie mobile
+                @include mobile-screen {
+                    width: 80%;
+                    height: 50%;
+                    top: 12%;
+                    
+                }
+                
+                // triangle du menu déroulant
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-top: 50px solid transparent;    
+                    border-right: 50px solid white; 
+                    position: absolute;
+                    right: 0;
+                    top: -10%; 
+                    
+                }
+    
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            @include flex(space-between, center, row);
+
+            @include tablet-screen {
+                height: 80%;
+                @include flex(space-between, center, column);
+                color: $color-txt2;
+            }
+        }
+
+        a {
+            color: white;
+            margin-right: 10px;
+            transition: all 200ms ease-in-out;
+            
+            &:hover {
+                padding: 15px 20px;
+                border-radius: 50px;
+                background-color: rgba($color: white, $alpha: 0.3);
+                font-family: 'Fraunces', serif;
+                font-weight: bolder;
+                font-size: 15px;
+                text-transform: uppercase;
+
+                @include tablet-screen {
+                    background-color: $color-bg1;
+                    color: $color-title;
+                }
+            }
+
+            @include tablet-screen {
+                color: $color-txt2;
+            }
+        }  
+    }
+
+    
+
+    &__hero {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+

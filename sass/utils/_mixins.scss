@@ -1,0 +1,71 @@
+// mixin flexbox
+
+@mixin flex($justify, $alignitems, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignitems;
+    flex-direction: $direction;
+}
+
+// mixin media queries
+
+@mixin tablet-screen {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile-screen {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+//mixin hoverLink
+
+@mixin hoverLink($color) {
+
+    &:hover {
+        &::before {
+            transform: scaleX(0);
+            opacity: 100%;
+            transform-origin: left;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: -6px;
+        bottom: 0;
+        width: 110%;
+        height: 8px;
+        border-radius: 50px;
+        background-color: $color;
+        z-index: -1;
+        transform: scaleX(1);
+        opacity: 30%;
+        transform-origin: right;
+        transition: transform 400ms ease-in-out;
+    } 
+}
+
+// mixin article photo et graphic
+
+@mixin articleBg ($url, $color) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    
+    h3 {
+        color: $color;
+    }
+
+    p {
+        color: $color;
+    }
+
+    @include tablet-screen {
+        background-size: 100%;
+    }
+}

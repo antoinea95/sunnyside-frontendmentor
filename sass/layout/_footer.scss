@@ -1,0 +1,36 @@
+.footer {
+    background-color: $color-footer;
+    height: 350px;
+    padding: 5%;
+    @include flex(space-between, center, column);
+
+    @include tablet-screen {
+        height: 300px;
+    }
+
+    &__link {
+        width: 20%;
+        @include flex(space-between,center,row);
+
+        @include tablet-screen {
+            width: 70%;
+        }
+
+        a {
+            color: $color-graphic;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    &__social {
+        width: 10%;
+        @include flex(space-between,center,row);
+
+        @include tablet-screen {
+            width: 40%;
+        }
+    }
+    
+}
