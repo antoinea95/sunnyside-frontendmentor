@@ -9,4 +9,12 @@ div#container {
     max-width: 1440px;
     margin: 0 auto;
     height: 100vh;
+
+    @include tablet-screen {
+        max-width: 1024px;
+    }
+
+    @include mobile-screen {
+        max-width: 768px;
+    }
 }
