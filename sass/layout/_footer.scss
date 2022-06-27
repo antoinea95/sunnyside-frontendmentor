@@ -5,7 +5,7 @@
     @include flex(space-between, center, column);
 
     @include tablet-screen {
-        height: 300px;
+        height: 30rem;
     }
 
     &__link {

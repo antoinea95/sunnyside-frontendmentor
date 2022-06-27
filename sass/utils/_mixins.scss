@@ -36,11 +36,11 @@
     &:before {
         content: '';
         position: absolute;
-        right: -6px;
+        right: -0.6rem;
         bottom: 0;
         width: 110%;
-        height: 8px;
-        border-radius: 50px;
+        height: 0.8rem;
+        border-radius: 5rem;
         background-color: $color;
         z-index: -1;
         transform: scaleX(1);

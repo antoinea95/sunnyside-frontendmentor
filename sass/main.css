@@ -101,8 +101,17 @@ p {
 
 * {
   box-sizing: border-box;
-  font-size: 18px;
   scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 61%;
+  }
 }
 
 div#container {
@@ -140,7 +149,7 @@ div#container {
 }
 
 .header__logo {
-  padding: 2rem;
+  padding: 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -157,7 +166,7 @@ div#container {
     cursor: pointer;
     top: 0;
     right: 0;
-    margin: 2rem;
+    margin: 3rem;
   }
 }
 
@@ -166,7 +175,7 @@ div#container {
   width: 30%;
   top: 0;
   right: 0;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -243,12 +252,12 @@ div#container {
 }
 
 .header__nav a:hover {
-  padding: 15px 20px;
+  padding: 1.5rem 2rem;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.3);
   font-family: 'Fraunces', serif;
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -282,13 +291,13 @@ div#container {
 @media screen and (max-width: 1024px) {
   .articleGrid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 600px);
+    grid-template-rows: repeat(6, 60rem);
   }
 }
 
 @media screen and (max-width: 768px) {
   .articleGrid {
-    grid-template-rows: 300px 400px 300px 400px 600px 600px;
+    grid-template-rows: 30rem 40rem 30rem 40rem 60rem 60rem;
   }
 }
 
@@ -312,7 +321,7 @@ div#container {
 }
 
 .articleGrid__content h2 {
-  padding-right: 50px;
+  padding-right: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -326,14 +335,8 @@ div#container {
   text-transform: uppercase;
   font-weight: bolder;
   color: #23303e;
-  font-size: 16px;
+  font-size: 1.6rem;
   position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .articleGrid__content a {
-    font-size: 14px;
-  }
 }
 
 .articleGrid__content--link1:hover::before {
@@ -345,11 +348,11 @@ div#container {
 .articleGrid__content--link1:before {
   content: '';
   position: absolute;
-  right: -6px;
+  right: -0.6rem;
   bottom: 0;
   width: 110%;
-  height: 8px;
-  border-radius: 50px;
+  height: 0.8rem;
+  border-radius: 5rem;
   background-color: #fad400;
   z-index: -1;
   transform: scaleX(1);
@@ -367,11 +370,11 @@ div#container {
 .articleGrid__content--link2:before {
   content: '';
   position: absolute;
-  right: -6px;
+  right: -0.6rem;
   bottom: 0;
   width: 110%;
-  height: 8px;
-  border-radius: 50px;
+  height: 0.8rem;
+  border-radius: 5rem;
   background-color: #fe7867;
   z-index: -1;
   transform: scaleX(1);
@@ -488,7 +491,7 @@ div#container {
 }
 
 .articleClient {
-  height: 800px;
+  height: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,17 +507,10 @@ div#container {
 .articleClient h3 {
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 8px;
+  letter-spacing: 0.5rem;
   color: #a7abae;
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-top: 10%;
-}
-
-@media screen and (max-width: 768px) {
-  .articleClient h3 {
-    font-size: 15px;
-    letter-spacing: 4px;
-  }
 }
 
 .articleClient__container {
@@ -539,11 +535,12 @@ div#container {
 @media screen and (max-width: 768px) {
   .articleClient__container {
     width: 100%;
+    max-width: 370px;
   }
 }
 
 .articleClient__bloc {
-  padding: 25px;
+  padding: 2.5rem;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -555,8 +552,8 @@ div#container {
   margin: 5%;
   position: relative;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 7.5rem;
+  height: 7.5rem;
   overflow: hidden;
 }
 
@@ -580,11 +577,11 @@ div#container {
 }
 
 .articleClient__bloc--role p {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .articleImg {
-  height: 450px;
+  height: 45rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -592,7 +589,7 @@ div#container {
 
 @media screen and (max-width: 1024px) {
   .articleImg {
-    height: 800px;
+    height: 80rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -600,7 +597,7 @@ div#container {
 
 @media screen and (max-width: 768px) {
   .articleImg {
-    height: 400px;
+    height: 40rem;
     grid-template-rows: repeat(2, 1fr);
   }
 }
@@ -650,7 +647,7 @@ div#container {
 
 @media screen and (max-width: 1024px) {
   .footer {
-    height: 300px;
+    height: 30rem;
   }
 }
 

@@ -6,11 +6,11 @@
 
     @include tablet-screen {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 600px)
+        grid-template-rows: repeat(6, 60rem)
     }
 
     @include mobile-screen {
-        grid-template-rows: 300px 400px 300px 400px 600px 600px;
+        grid-template-rows: 30rem 40rem 30rem 40rem 60rem 60rem;
     }
 
 
@@ -27,7 +27,7 @@
         }
 
         h2 {
-            padding-right: 50px;
+            padding-right: 5rem;
 
             @include mobile-screen {
                 padding-right: 0;
@@ -39,13 +39,8 @@
             text-transform: uppercase;
             font-weight: bolder;
             color: $color-title;
-            font-size: 16px;
+            font-size: 1.6rem;
             position: relative;
-
-            @include mobile-screen {
-                font-size: 14px;
-                
-            }
         }
 
         &--link1 {
@@ -122,7 +117,7 @@
 
 .articleClient {
 
-    height: 800px;
+    height: 80rem;
     @include flex(center, center, column);
 
     @include tablet-screen {
@@ -132,15 +127,10 @@
     h3 {
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 8px;
+        letter-spacing: 0.5rem;
         color: $color-txt2;
-        font-size: 18px;
+        font-size: 1.8rem;
         margin-top: 10%;
-
-        @include mobile-screen {
-            font-size: 15px;
-            letter-spacing: 4px;
-        }
     }
 
     &__container {
@@ -156,11 +146,12 @@
 
         @include mobile-screen {
             width: 100%;
+            max-width: 370px;
         }
     }
 
     &__bloc {
-        padding: 25px;
+        padding: 2.5rem;
         height: 100%;
         @include flex (space-between, center, column);
 
@@ -168,8 +159,8 @@
             margin: 5%;
             position: relative;
             border-radius: 50%;
-            width: 75px;
-            height: 75px;
+            width: 7.5rem;
+            height: 7.5rem;
             overflow: hidden;
 
             img {
@@ -193,26 +184,26 @@
             }
 
             p {
-                font-size: 15px;
+                font-size: 1.5rem;
             }   
         }
     }
 }
 
 .articleImg {
-    height: 450px;
+    height: 45rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
 
     @include tablet-screen {
-        height: 800px;
+        height: 80rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 
     @include mobile-screen {
-        height: 400px;
+        height: 40rem;
         grid-template-rows: repeat(2, 1fr);
     }
 

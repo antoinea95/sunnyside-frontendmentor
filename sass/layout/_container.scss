@@ -1,7 +1,14 @@
 * {
     box-sizing: border-box;
-    font-size: 18px;
     scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include mobile-screen {
+        font-size: 61%;
+    }
 }
 
 
