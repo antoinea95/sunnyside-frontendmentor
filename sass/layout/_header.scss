@@ -94,7 +94,7 @@
             @include tablet-screen {
                 overflow: hidden;
                 height: 80%;
-                @include flex(space-between, center, column);
+                @include flex(space-around, center, column);
                 color: $color-txt2;
             }
         }

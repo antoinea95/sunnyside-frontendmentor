@@ -238,7 +238,7 @@ div#container {
     overflow: hidden;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     color: #a7abae;
